@@ -27,8 +27,9 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Head>
+                <title>AlgoQuiz</title>
                 <meta property="og:image" content={db.bg}></meta>
             </Head>
             <QuizBackground backgroundImage={db.bg}>
@@ -54,6 +55,6 @@ export default function Home() {
                 </QuizContainer>
                 <GitHubCorner projectUrl="https://github.com/omariosouto" />
             </QuizBackground>
-        </div>
+        </>
     );
 }
